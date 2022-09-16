@@ -13,6 +13,10 @@
 		27283FC328D452F800CFE554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27283FC128D452F800CFE554 /* Main.storyboard */; };
 		27283FC528D452FA00CFE554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27283FC428D452FA00CFE554 /* Assets.xcassets */; };
 		27283FC828D452FA00CFE554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27283FC628D452FA00CFE554 /* LaunchScreen.storyboard */; };
+		27283FD028D456F900CFE554 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27283FCF28D456F900CFE554 /* Quote.swift */; };
+		27283FD228D46C9500CFE554 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27283FD128D46C9500CFE554 /* QuoteViewController.swift */; };
+		27283FD528D46EC000CFE554 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27283FD428D46EC000CFE554 /* DataManager.swift */; };
+		27283FD928D4B4B600CFE554 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27283FD828D4B4B600CFE554 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		27283FC428D452FA00CFE554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27283FC728D452FA00CFE554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27283FC928D452FA00CFE554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27283FCF28D456F900CFE554 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		27283FD128D46C9500CFE554 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		27283FD428D46EC000CFE554 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		27283FD828D4B4B600CFE554 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		27283FBA28D452F800CFE554 /* LuciferSeriesPrediction2HW10Autoparsing */ = {
 			isa = PBXGroup;
 			children = (
+				27283FD728D4734700CFE554 /* Services */,
+				27283FD328D46E9C00CFE554 /* Model */,
 				27283FBB28D452F800CFE554 /* AppDelegate.swift */,
 				27283FBD28D452F800CFE554 /* SceneDelegate.swift */,
 				27283FBF28D452F800CFE554 /* ViewController.swift */,
+				27283FD128D46C9500CFE554 /* QuoteViewController.swift */,
 				27283FC128D452F800CFE554 /* Main.storyboard */,
 				27283FC428D452FA00CFE554 /* Assets.xcassets */,
 				27283FC628D452FA00CFE554 /* LaunchScreen.storyboard */,
 				27283FC928D452FA00CFE554 /* Info.plist */,
 			);
 			path = LuciferSeriesPrediction2HW10Autoparsing;
+			sourceTree = "<group>";
+		};
+		27283FD328D46E9C00CFE554 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27283FCF28D456F900CFE554 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27283FD728D4734700CFE554 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27283FD428D46EC000CFE554 /* DataManager.swift */,
+				27283FD828D4B4B600CFE554 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27283FD028D456F900CFE554 /* Quote.swift in Sources */,
+				27283FD528D46EC000CFE554 /* DataManager.swift in Sources */,
 				27283FC028D452F800CFE554 /* ViewController.swift in Sources */,
+				27283FD928D4B4B600CFE554 /* NetworkManager.swift in Sources */,
 				27283FBC28D452F800CFE554 /* AppDelegate.swift in Sources */,
 				27283FBE28D452F800CFE554 /* SceneDelegate.swift in Sources */,
+				27283FD228D46C9500CFE554 /* QuoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
